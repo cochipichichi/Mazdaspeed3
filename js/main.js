@@ -1,5 +1,4 @@
 
-// Tema claro / oscuro y tamaño de fuente
 (function () {
   const root = document.documentElement;
   const body = document.body;
@@ -31,7 +30,6 @@
     localStorage.setItem('ms3-font-scale', String(next));
   }
 
-  // Narrador simple con SpeechSynthesis
   let speaking = false;
   function toggleTTS() {
     if (!('speechSynthesis' in window)) {
@@ -56,7 +54,6 @@
     synth.speak(utter);
   }
 
-  // Cambio simple ES/EN usando data-lang
   function toggleLang() {
     const current = document.documentElement.getAttribute('data-lang') || 'es';
     const next = current === 'es' ? 'en' : 'es';
@@ -68,7 +65,6 @@
     });
   }
 
-  // KPSI focus
   function focusKpsi() {
     const panel = document.getElementById('kpsi-panel');
     if (panel) {
@@ -78,7 +74,6 @@
     }
   }
 
-  // Search
   function bindSearch() {
     const input = document.getElementById('searchInput');
     const btn = document.getElementById('searchBtn');
@@ -143,7 +138,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     bindSearch();
 
-    // PWA: registrar service worker
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./service-worker.js').catch(() => {});
     }

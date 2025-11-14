@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'mazdaspeed-xr-v1';
+const CACHE_NAME = 'mazdaspeed-xr-v2';
 const CORE_ASSETS = [
   './',
   './index.html',

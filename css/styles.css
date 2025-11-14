@@ -4,8 +4,8 @@
   --bg-alt: #0b1120;
   --fg: #e5e7eb;
   --fg-muted: #9ca3af;
-  --accent: #ef4444;
-  --accent-soft: rgba(239, 68, 68, 0.16);
+  --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.16);
   --card-radius: 1rem;
   --transition-fast: 0.18s ease-out;
   --font-scale: 1;
@@ -17,7 +17,7 @@
   --bg-alt: #ffffff;
   --fg: #111827;
   --fg-muted: #4b5563;
-  --accent-soft: rgba(239, 68, 68, 0.08);
+  --accent-soft: rgba(56, 189, 248, 0.08);
 }
 
 *,
@@ -98,8 +98,8 @@ img {
 }
 
 .nav-btn.accent {
-  border-color: rgba(248, 113, 113, 0.9);
-  background: radial-gradient(circle at top, rgba(127, 29, 29, 0.9), rgba(24, 24, 27, 0.95));
+  border-color: rgba(56, 189, 248, 0.9);
+  background: radial-gradient(circle at top, rgba(8, 47, 73, 0.95), rgba(15, 23, 42, 0.98));
 }
 
 .nav-btn:hover {
@@ -224,22 +224,6 @@ img {
   gap: 1.2rem;
 }
 
-/* Lists */
-
-.spec-list {
-  list-style: none;
-  padding: 0;
-  margin: 0.4rem 0 0;
-}
-
-.spec-list li {
-  padding: 0.15rem 0;
-}
-
-.edu-list {
-  margin-left: 1.1rem;
-}
-
 /* CTA buttons */
 
 .cta-btn {
@@ -249,12 +233,12 @@ img {
   border: none;
   text-decoration: none;
   color: #f9fafb;
-  background: linear-gradient(to right, #7f1d1d, #b91c1c);
+  background: linear-gradient(to right, #0ea5e9, #38bdf8);
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   cursor: pointer;
-  box-shadow: 0 12px 30px rgba(127, 29, 29, 0.7);
+  box-shadow: 0 12px 30px rgba(15, 118, 178, 0.7);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), filter var(--transition-fast);
 }
 
@@ -270,8 +254,8 @@ img {
 
 .cta-btn:hover {
   transform: translateY(-1px);
-  filter: brightness(1.05);
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.9);
+  filter: brightness(1.06);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.9);
 }
 
 /* Chips / workflow */

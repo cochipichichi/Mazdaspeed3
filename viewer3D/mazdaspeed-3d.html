@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visor 3D · Mazdaspeed3</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <meta name="theme-color" content="#020617" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  
+<header class="top-bar">
+  <div class="brand">
+    <span class="brand-mark">🚗</span>
+    <span class="brand-text">Mazdaspeed 3 XR Garage</span>
+  </div>
+  <nav class="main-nav">
+    <a href="../index.html" class="nav-btn">🏠 Inicio</a>
+    <a href="../viewer3D/mazdaspeed-3d.html" class="nav-btn accent">👁️ 3D</a>
+    <a href="../viewerAR/mazdaspeed-ar.html" class="nav-btn accent">📱 AR</a>
+    <a href="../viewerVR/mazdaspeed-vr.html" class="nav-btn accent">🥽 VR</a>
+  </nav>
+  <div class="accessibility-controls">
+    <button class="ctrl-btn" data-action="toggle-tts" title="Narrador">🗣️</button>
+    <button class="ctrl-btn" data-action="toggle-theme" title="Modo claro/oscuro">🌓</button>
+    <button class="ctrl-btn" data-action="font-inc" title="Aumentar tamaño de letra">A+</button>
+    <button class="ctrl-btn" data-action="font-dec" title="Disminuir tamaño de letra">A−</button>
+    <button class="ctrl-btn" data-action="toggle-lang" title="Cambiar idioma ES/EN">🌐</button>
+    <button class="ctrl-btn" data-action="focus-kpsi" title="Panel de datos">🧠</button>
+    <button class="ctrl-btn" data-action="focus-search" title="Buscar en la página">🔍</button>
+  </div>
+</header>
+
+  <main id="main-content" class="layout">
+    <section class="card">
+      <h1>👁️ Visor 3D interactivo</h1>
+      <p>
+        Arrastra con el mouse o con el dedo para rotar el Mazdaspeed3.
+        Haz zoom con la rueda o gesto de pinza para acercarte a detalles como la toma de aire del capó,
+        el difusor trasero o las llantas deportivas.
+      </p>
+      <model-viewer
+        src="../assets/models/Mazdaspeed.glb"
+        alt="Modelo 3D del Mazdaspeed 3"
+        camera-controls
+        auto-rotate
+        interaction-prompt="auto"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        ios-src="../assets/models/Mazdaspeed.usdz"
+        shadow-intensity="1"
+        exposure="1.1"
+        style="width: 100%; height: 480px; border-radius: 1rem; overflow: hidden; background: radial-gradient(circle at top, #1f2937, #020617);">
+      </model-viewer>
+      <div class="cta-row">
+        <a href="../viewerAR/mazdaspeed-ar.html" class="cta-btn">📱 Ir a modo AR</a>
+        <a href="../viewerVR/mazdaspeed-vr.html" class="cta-btn">🥽 Ir a modo VR</a>
+        <a href="../index.html" class="cta-btn secondary">🏠 Volver al inicio</a>
+      </div>
+    </section>
+  </main>
+  
+<footer class="site-footer">
+  <p>Neotech EduLab SpA — Educación Inmersiva &amp; I+D 🚀</p>
+  <p>Proyecto: Mazdaspeed 3 XR Garage · Versión educativa para análisis de datos automotrices.</p>
+  <p>Contacto: Francisco Pinto &amp; Belén Acuña · neotechedulab@gmail.com</p>
+</footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

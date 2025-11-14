@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mazdaspeed 3 XR Garage · Neotech EduLab</title>
+  <meta name="description" content="Repositorio educativo Mazdaspeed 3 XR Garage: ficha técnica, historia, análisis de datos y visor 3D/AR/VR del modelo Mazdaspeed3.">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#020617" />
+</head>
+<body>
+  
+<header class="top-bar">
+  <div class="brand">
+    <span class="brand-mark">🚗</span>
+    <span class="brand-text">Mazdaspeed 3 XR Garage</span>
+  </div>
+  <nav class="main-nav">
+    <a href="index.html" class="nav-btn">🏠 Inicio</a>
+    <a href="viewer3D/mazdaspeed-3d.html" class="nav-btn accent">👁️ 3D</a>
+    <a href="viewerAR/mazdaspeed-ar.html" class="nav-btn accent">📱 AR</a>
+    <a href="viewerVR/mazdaspeed-vr.html" class="nav-btn accent">🥽 VR</a>
+  </nav>
+  <div class="accessibility-controls">
+    <button class="ctrl-btn" data-action="toggle-tts" title="Narrador">🗣️</button>
+    <button class="ctrl-btn" data-action="toggle-theme" title="Modo claro/oscuro">🌓</button>
+    <button class="ctrl-btn" data-action="font-inc" title="Aumentar tamaño de letra">A+</button>
+    <button class="ctrl-btn" data-action="font-dec" title="Disminuir tamaño de letra">A−</button>
+    <button class="ctrl-btn" data-action="toggle-lang" title="Cambiar idioma ES/EN">🌐</button>
+    <button class="ctrl-btn" data-action="focus-kpsi" title="Panel de datos">🧠</button>
+    <button class="ctrl-btn" data-action="focus-search" title="Buscar en la página">🔍</button>
+  </div>
+</header>
+
+  <main id="main-content" class="layout">
+    <section class="hero">
+      <div class="hero-text">
+        <h1><span data-lang="es">Mazdaspeed 3 XR Garage</span><span data-lang="en" class="hidden">Mazdaspeed 3 XR Garage</span></h1>
+        <p class="lead" data-lang="es">
+          Explora este <strong>hatchback deportivo</strong> en versión educativa: ficha técnica, historia,
+          datos comparativos y un visor <strong>3D · AR · VR</strong> para analizar el diseño y la ingeniería del
+          Mazdaspeed3 de segunda generación (2010–2013).
+        </p>
+        <p class="lead hidden" data-lang="en">
+          Explore this <strong>hot hatch</strong> with an educational twist: specs, history, data dashboards,
+          and <strong>3D · AR · VR</strong> viewers to understand the engineering behind the second‑generation
+          Mazdaspeed3 (2010–2013).
+        </p>
+        <div class="cta-row">
+          <a href="viewer3D/mazdaspeed-3d.html" class="cta-btn primary">👁️ Ver auto en 3D</a>
+          <a href="viewerAR/mazdaspeed-ar.html" class="cta-btn">📱 Modo AR</a>
+          <a href="viewerVR/mazdaspeed-vr.html" class="cta-btn">🥽 Modo VR</a>
+        </div>
+      </div>
+      <figure class="hero-image">
+        <img src="assets/img/Mazdaspeed.jpg" alt="Mazdaspeed 3 negro modificado con llantas rojas" />
+        <figcaption>Render / referencia visual del Mazdaspeed3 usado en este proyecto.</figcaption>
+      </figure>
+    </section>
+
+    <section class="grid two-cols">
+      <article class="card">
+        <h2>📊 Ficha técnica básica</h2>
+        <ul class="spec-list">
+          <li><strong>Tipo:</strong> Sport compact hatchback 5 puertas, tracción delantera.</li>
+          <li><strong>Motor:</strong> 2.3 L MZR DISI Turbo, 4 cilindros en línea.</li>
+          <li><strong>Potencia aprox.:</strong> 263 hp (196 kW) @ 5.500 rpm.</li>
+          <li><strong>Torque:</strong> 380 Nm (280 lb·ft) @ 3.000 rpm.</li>
+          <li><strong>Transmisión:</strong> Caja manual de 6 velocidades, LSD delantero.</li>
+          <li><strong>0–100 km/h:</strong> ~5,8 s (condiciones de prueba).</li>
+          <li><strong>Años de producción:</strong> 2007–2013 (Mazdaspeed3 / Mazda3 MPS).</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>🎓 Enfoque educativo</h2>
+        <p>
+          Este repositorio está pensado para cursos de <strong>Tecnología, Física y Matemática</strong> donde
+          se analizan conceptos como aceleración, torque, aerodinámica y eficiencia energética usando un caso real.
+        </p>
+        <ol class="edu-list">
+          <li>Leer la ficha técnica y extraer variables (masa, potencia, consumo estimado).</li>
+          <li>Modelar gráficamente aceleración y frenado usando datos de pruebas de pista.</li>
+          <li>Explorar el modelo 3D para reconocer elementos de diseño (difusor, alerón, entrada de aire).</li>
+          <li>Registrar observaciones en un archivo CSV y discutir mejoras de diseño.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section id="kpsi-panel" class="card kpsi">
+      <h2>🧠 KPSI · ¿Qué sé del Mazdaspeed3?</h2>
+      <p>Marca con ✔️ lo que sientas que dominas antes y después de trabajar con el modelo XR.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Ítem</th>
+            <th>Antes</th>
+            <th>Después</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Diferenciar potencia (hp) y torque (Nm).</td>
+            <td>⬜️</td>
+            <td>⬜️</td>
+          </tr>
+          <tr>
+            <td>Explicar cómo ayuda la turbina en la aceleración.</td>
+            <td>⬜️</td>
+            <td>⬜️</td>
+          </tr>
+          <tr>
+            <td>Relacionar suspensión y agarre en curvas.</td>
+            <td>⬜️</td>
+            <td>⬜️</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note">Puedes imprimir esta tabla o digitalizarla en un CSV para analizar progresos.</p>
+    </section>
+
+    <section class="card">
+      <h2>✅ Flujo de trabajo sugerido</h2>
+      <div class="workflow">
+        <button class="chip">👁️ Explorar 3D</button>
+        <button class="chip">📱 Probar AR</button>
+        <button class="chip">🥽 Sumergirse en VR</button>
+        <button class="chip">✅ Registrar datos en CSV</button>
+        <button class="chip">🧪 Resolver quiz</button>
+        <button class="chip">🎟️ Ticket de salida</button>
+      </div>
+      <p>
+        Integra estas etapas en tu secuencia de clases para evidenciar aprendizaje: primero observación,
+        luego explicación guiada, práctica aplicada y, finalmente, metacognición y evaluación.
+      </p>
+    </section>
+
+    <section class="card search-block">
+      <h2>🔍 Buscador dentro de la página</h2>
+      <label for="searchInput">Escribe una palabra clave (ej. <em>turbo</em>, <em>torque</em>, <em>ficha</em>):</label>
+      <input id="searchInput" type="text" placeholder="Buscar en el contenido…" />
+      <button id="searchBtn" class="cta-btn small">Buscar</button>
+      <p id="searchStatus" class="search-status" aria-live="polite"></p>
+    </section>
+  </main>
+  
+<footer class="site-footer">
+  <p>Neotech EduLab SpA — Educación Inmersiva &amp; I+D 🚀</p>
+  <p>Proyecto: Mazdaspeed 3 XR Garage · Versión educativa para análisis de datos automotrices.</p>
+  <p>Contacto: Francisco Pinto &amp; Belén Acuña · neotechedulab@gmail.com</p>
+</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
